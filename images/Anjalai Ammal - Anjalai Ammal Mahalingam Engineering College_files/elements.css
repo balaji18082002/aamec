@@ -1,0 +1,457 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -- form styles ----------------------------------- */
+
+form {
+	margin: 0;
+}
+
+form fieldset { 
+	border: 0 none; 
+	margin: 0; 
+	padding: 0;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn,
+input.button,
+button,
+.btn-group > .btn:first-child,
+.ol_buttonBlack,
+.ol_buttonWhite,
+.ol_buttonAccent {
+	position: relative;
+	z-index: 0;	
+	text-decoration: none;
+	border: none;	
+	font-size: 12px;	
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.6);	
+	cursor: pointer;	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;	
+	background-position: right;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	-pie-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.15);	
+}
+
+ul.pagenav li a,
+.ol_pagination > div {
+	position: relative;
+	color: #666;
+	background-color: #f6f6f6;
+	z-index: 0;	
+	text-decoration: none;
+	border: none;	
+	font-size: 13px;		
+	cursor: pointer;	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;	
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	-pie-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.15);	
+}
+
+input.button,
+button,
+a.btn,
+.btn,
+.btnPlain {
+	height: 32px;
+	line-height: 32px;
+	top: -1px;
+}
+
+input.button,
+button,
+a.btn,
+.btn {
+	padding: 0 12px 0 10px;
+	margin: 0 10px 0 0;
+	
+}
+
+.btnPlain {
+	padding: 0 7px 0 5px;
+}
+
+.btn-group + .btn-group {
+    margin-left: 10px;
+}
+
+.btn-toolbar .btn + .btn, 
+.btn-toolbar .btn-group + .btn, 
+.btn-toolbar .btn + .btn-group {
+    margin-left: 0;
+}
+
+.controls > .btn:last-child,
+.controls > .btn:only-child,
+.btn-group > .btn:last-child,
+.btn-group > .btn:only-child {
+	margin: 0;
+}
+
+.input-append .add-on,
+.input-prepend .add-on {
+	height: 32px !important;
+	padding: 0px 7px 0px 7px;
+	margin: 0;
+	border: none;
+}
+
+.btn-mini {
+	height: 20px !important;
+	line-height: 18px !important;
+	width: 20px;
+	padding: 0 !important;
+	margin: 0 10px 0 0;
+}
+
+.btn-mini > a> i {
+	font-size: 12px !important;
+}
+
+input.btn-mini {
+	padding: 0 5px !important;
+}
+
+.btn.disabled, 
+.btn[disabled] {
+	opacity: 0.75;
+}
+
+.dropdown-toggle {
+	margin: 0;
+	padding: 0 7px 3px 7px !important;
+	line-height: 28px;
+}
+
+.dropdown-toggle > i.icon-cog {
+	position: relative;
+	background-image: none;
+	bottom: 2px;
+	left: 2px;
+}
+
+.dropdown-toggle > i.icon-cog:before {
+	font-family: 'ol_icons';
+	content: '\e801';
+	font-style: normal;
+	font-size: 16px;
+}
+
+
+.dropdown-menu {	
+	margin: 0;
+	padding: 0;	
+	line-height: 12px;
+	border: none;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px; 
+	
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	-pie-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu a {
+	padding: 3px 10px;
+}
+
+.btn-group .btn.dropdown-toggle {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.btn-group.open .btn.dropdown-toggle {
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+}
+
+.btn-group.pull-right > .dropdown-menu {
+	-webkit-border-radius: 3px 0 3px 3px;
+	-moz-border-radius: 3px 0 3px 3px;
+	border-radius: 3px 0 3px 3px; 
+}
+
+.btn-group.pull-left > .dropdown-menu {
+	-webkit-border-radius: 0 3px 3px 3px;
+	-moz-border-radius: 0 3px 3px 3px;
+	border-radius: 0 3px 3px 3px; 
+}
+
+.dropdown-menu > li:first-child a:hover {
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0; 
+}
+
+.dropdown-menu > li:last-child a:hover {
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px; 	
+}
+
+
+.ol_buttonAccent,
+.ol_buttonYellow, 
+.ol_buttonRed, 
+.ol_buttonBlue,
+.ol_buttonGreen,
+.ol_buttonPink,
+.ol_buttonBlack,
+.ol_buttonWhite,
+ul.pagenav li a,
+.ol_pagination > div {
+	height: 18px;
+	line-height: 18px;
+	padding: 4px 12px 1px 12px;
+	display: inline-block;
+	margin: 0 10px 10px 0;
+}
+
+input.button:hover, button:hover {
+	border-color: #4f4f4f;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"], 
+select,
+textarea {
+
+	padding: 4px 5px 4px 5px;
+	margin: 0 10px 0 0;
+	font-size: 12px;
+	border: none;
+	
+	-moz-box-sizing: border-box;  
+	-webkit-box-sizing: border-box; 
+ 	box-sizing: border-box;  
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	-moz-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.input-prepend input,
+.input-append input,
+.input-prepend.input-append input {
+	margin: 0;
+}
+
+.input-prepend input {
+	-webkit-border-radius: 0 2px 2px 0;
+	-moz-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+}
+.input-append input {
+	-webkit-border-radius: 2px 0 0 2px;
+	-moz-border-radius: 2px 0 0 2px;
+	border-radius: 2px 0 0 2px;	
+}
+
+.input-prepend.input-append .add-on:first-child, .input-prepend.input-append .btn:first-child {
+    border-radius: 2px 0 0 2px;
+    margin-right: -1px;
+}
+.input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child {
+    border-radius: 0 2px 2px 0;
+    margin-left: -1px;
+}
+
+.input-prepend.input-append input {
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;	
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="password"],
+#contact-form input[type="email"], 
+#contact-form select,
+#contact-form textarea {
+	width: 100%;
+}
+
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+	margin-left: 0;
+}
+
+.input-append button {
+	margin: 0 !important;
+	left: -0;
+}
+
+
+input[type="text"],
+input[type="password"], 
+input[type="email"], 
+select {
+	height: 30px;
+}
+
+select:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+input:focus:required:invalid:focus, 
+textarea:focus:required:invalid:focus, 
+select:focus:required:invalid:focus {
+    border-color: transparent;
+}
+
+.mce_editable {
+	width: 100%;	
+}
+
+input[type="radio"] {
+	border: none;
+}
+
+input[type="checkbox"] {
+	margin-top: 3px;
+}
+
+.input-small {
+    width: 95px;
+}
+
+select {
+	wisth: 100%;
+    max-width: 210px;
+}
+
+input, textarea {
+	width: 100%;
+    max-width: 320px;
+}
+
+.inputCalendar {
+	width: 182px;
+}
+
+label, legend {
+	display: block;
+	font-weight: normal;
+	padding: 0 10px 3px 0;
+	margin: 0;
+	width: auto;
+}
+
+.label-warning, .badge-warning {
+	margin-right: 10px;	
+}
+
+.formelm-area label {
+	vertical-align:top;
+}
+
+.formelm, .formelm-buttons, .formelm-area {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+div.formelm, div.formelm-area {
+	margin-bottom: 10px;
+}
+
+div.button2-left {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+/* CONTACT FORM --------------------------------------------------- */
+
+#contact-form dl {
+	white-space: normal;
+}
+
+#contact-form dl dt, #contact-form dl dd {
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#contact-form dl dt {
+	width: 20%;
+}
+#contact-form dl dt {
+	clear: left;
+}
+#contact-form dl dd {
+	clear: right;
+	width: 80%;
+}
+
+/* -----------*/
+
+.form-horizontal .control-group {
+    margin-bottom: 10px;
+}
+
+.form-actions {
+    background-color: transparent;
+    border-top: none;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding: 0;
+}
+
+#adminForm div.input-prepend .btn,
+.input-prepend > a.btn,
+.input-append > a.btn {
+	margin: 0;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.media-preview {
+	height: 32px !important;
+	margin-top: -1px !important;
+	padding-left: 5px !important;
+	padding-right: 10px !important;
+	cursor: pointer;
+}
+
+.media-preview span i {
+	margin-top: 6px;
+}
+
+
+.btn-toolbar .btn {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+<!--included -->
+
+.dataheader{ background-color:#84D7FF; font-weight:bold}
+.datagrid{ background-color:#E6F7FF }
+.datagridlight{ background-color:#D5F1FF}
+

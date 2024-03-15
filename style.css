@@ -1,0 +1,844 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header{
+    width: 100%;
+    height: 100%;
+    
+}
+.container{
+    width: 100%;
+    height: 140px;
+    
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+
+}
+.logo img{
+    width: 60%;
+    margin-left: 250px;
+    margin-top: 20px;
+    
+
+}
+.slider{
+    width: 100%;
+    background-image: url(images/IMG_20190611_115459.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 25rem;
+    justify-content: center;
+    animation:change 8s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-top: 30px;
+    
+
+}
+@keyframes change{
+    0%{
+        background-image: url(images/IMG_20190611_115459.jpg);
+    }
+    20%{
+        background-image:url(images/IMG_20190611_115735.jpg);
+    }
+    40%{
+        background-image:url(images/campus.jpg);
+      }
+      80%{
+        background-image:url(images/chem-rank.jpg);
+     
+    }
+    100%{
+        background-image:url(images/founder.jpg);
+    }
+    }
+    .navlinks{
+        cursor: pointer;
+        display: flex;
+        margin-top: 370px;
+        height: 35px;
+        width: 100%;
+        text-transform: capitalize;
+        background-color: dodgerblue;
+        font-size:14px;
+        line-height: 30px;
+        font-weight:bold;
+        
+    
+    }
+    .navlinks li{
+        list-style-type: none; 
+     
+    }
+    .navlinks li a{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    
+    }
+    .nav1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+        font-family:"BPreplayRegular", "Trebuchet MS", Arial, Helvetica, sans-serif !important; 
+     
+    }
+    .nav1 li a{
+        display: block;
+        padding: 3px 8px;
+    }
+    .nav1 li a:hover{
+        background-color: red;
+    }
+    .drop1{
+        position: absolute;
+        display: none;
+        top: 78%;
+        width: 15%; 
+        border: 1px solid black;
+               
+    }
+    .drop1 li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .drop1 li a:hover{
+        background-color: gray;
+      
+    }
+    .nav1 li:hover .drop1{
+        display: block; 
+    }
+    .nav1 li:hover .drop1{
+        background-color: dodgerblue;
+    }
+    .drop2{
+        position: absolute;
+        display: none;
+        top: 8%;
+        width: 65%; 
+        border: 1px solid black;
+        left: 190px;
+               
+    }
+    .drop2 li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .drop2 li a:hover{
+        background-color: gray;
+      
+    }
+    .drop1 li:hover .drop2{
+        display: block; 
+    }
+    .drop1 li:hover .drop2{
+        background-color: dodgerblue;
+    }
+    .drop3{
+        position: absolute;
+        display: none;
+        top: 8%;
+        width: 65%; 
+        border: 1px solid black;
+        top: 150px;
+        left: 200px;
+        
+        
+               
+    }
+    .drop3 li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .drop3 li a:hover{
+        background-color: gray;
+      
+    }
+    .drop1 li:hover .drop3{
+        display: block; 
+    }
+    .drop1 li:hover .drop3{
+        background-color: dodgerblue;
+    }
+    .dep{
+        position: absolute;
+        display: none;
+        top: 90%;
+        width: 15%; 
+        border: 1px solid black;
+        
+               
+    }
+    .dep li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .dep li a:hover{
+        background-color: gray;
+      
+    }
+    .nav1 li:hover .dep{
+        display: block; 
+    }
+    .nav1 li:hover .dep{
+        background-color: dodgerblue;
+    }
+    .pla{
+        position: absolute;
+        display: none;
+        top: 90%;
+        width: 15%; 
+        border: 1px solid black;
+        
+               
+    }
+    .pla li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .pla li a:hover{
+        background-color: gray;
+      
+    }
+    .nav1 li:hover .pla{
+        display: block; 
+    }
+    .nav1 li:hover .pla{
+        background-color: dodgerblue;
+    }
+    .iq{
+        position: absolute;
+        display: none;
+        top: 90%;
+        width: 15%; 
+        border: 1px solid black;
+        
+               
+    }
+    .iq li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .iq li a:hover{
+        background-color: gray;
+      
+    }
+    .nav1 li:hover .iq{
+        display: block; 
+    }
+    .nav1 li:hover .iq{
+        background-color: dodgerblue;
+    }
+    .ac{
+        position: absolute;
+        display: none;
+        top: 90%;
+        width: 15%; 
+        border: 1px solid black;
+        
+               
+    }
+    .ac li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .ac li a:hover{
+        background-color: gray;
+      
+    }
+    .nav1 li:hover .ac{
+        display: block; 
+    }
+    .nav1 li:hover .ac{
+        background-color: dodgerblue;
+    }
+    .re{
+        position: absolute;
+        display: none;
+        top: 90%;
+        width: 15%; 
+        border: 1px solid black;
+        
+               
+    }
+    .re li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .re li a:hover{
+        background-color: gray;
+      
+    }
+    .nav1 li:hover .re{
+        display: block; 
+    }
+    .nav1 li:hover .re{
+        background-color: dodgerblue;
+    }
+    .nb{
+        position: absolute;
+        display: none;
+        top: 90%;
+        width: 15%; 
+        border: 1px solid black;
+        
+               
+    }
+    .nb li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .nb li a:hover{
+        background-color: gray;
+      
+    }
+    .nav1 li:hover .nb{
+        display: block; 
+    }
+    .nav1 li:hover .nb{
+        background-color: dodgerblue;
+    }
+    .navlinks1{
+        cursor: pointer;
+        display: flex;
+        
+        height: 35px;
+        width: 70%;
+        text-transform: capitalize;
+        background-color: dodgerblue;
+        font-size:14px;
+        line-height: 30px;
+        font-weight:bold;
+        margin-left: 250px;
+        
+        
+        
+        
+    
+    }
+    .navlinks1 li{
+        list-style-type: none; 
+     
+    }
+    .navlinks1 li a{
+        text-decoration: none;
+        
+        
+        color: white;
+    
+    }
+    .nav2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-family:"BPreplayRegular", "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+        
+         
+     
+    }
+    
+    .nav2 li a{
+        display: block;
+        padding: 3px 10px;
+        
+    }
+    .nav2 li a:hover{
+        background-color: red;
+    }
+    .navlinks li{
+        list-style-type: none; 
+     
+    }
+    .navlinks li a{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    
+    }
+    .ni{
+        position: absolute;
+        display: none;
+        top: 90%;
+        width: 15%; 
+        border: 1px solid black;
+        margin-top: 40px;
+        
+        
+               
+    }
+    .ni li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .ni li a:hover{
+        background-color: gray;
+      
+    }
+    .nav2 li:hover .ni{
+        display: block; 
+    }
+    .nav2 li:hover .ni{
+        background-color: dodgerblue;
+    }
+    .rd{
+        position: absolute;
+        display: none;
+        top: 90%;
+        width: 15%; 
+        border: 1px solid black;
+        margin-top: 40px;
+        
+        
+               
+    }
+    .rd li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .rd li a:hover{
+        background-color: gray;
+      
+    }
+    .nav2 li:hover .rd{
+        display: block; 
+    }
+    .nav2 li:hover .rd{
+        background-color: dodgerblue;
+    }
+    .ra{
+        position: absolute;
+        display: none;
+        top: 90%;
+        width: 15%; 
+        border: 1px solid black;
+        margin-top: 40px;
+        
+        
+               
+    }
+    .ra li a{
+        border:1px dashed;
+        border-bottom: 0;
+    
+    }
+    .ra li a:hover{
+        background-color: gray;
+      
+    }
+    .nav2 li:hover .ra{
+        display: block; 
+    }
+    .nav2 li:hover .ra{
+        background-color: dodgerblue;
+    }
+    .web{
+        width: 75%;
+        height: 400px;
+        background-color: white;
+        margin-left: 250px;
+        border: 1px black;
+        display: flex;
+        border: 1px solid black;
+        
+    }
+    .web img{
+        margin-top: 10px;
+        width: 20px;
+        height: 30px;
+
+    }
+    .web h4{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .web1 h3{
+        margin-top: 60px;
+        color: dodgerblue;
+        margin-left: -120px;
+    }
+    .web1 h5{
+        margin-top: -10px;
+        
+        margin-left: -120px;
+        
+    }
+    .web1 h4{
+        margin-left: 750px;
+        color: dodgerblue;
+    }
+    .web2{
+        width: 75%;
+        height: 200px;
+        
+        border: 1px solid black;
+        margin-left: 250px;
+        
+    }
+    .web2 h3{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .web4{
+        border: 1px solid white;
+        width: 150px;
+        height: 100px;
+        background-color: dodgerblue;
+        border-radius: 10px;
+        padding: 10px 20px;
+        box-shadow: 4px 4px 4px 4px ;
+    }
+    .web3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 20px;
+        
+        
+    }
+    .web4 h2{
+        width: 160px;
+        color: aliceblue;
+        padding: 5px;
+        font-size: medium;
+    }
+    .web4 span{
+        color: aliceblue;
+        padding: 20px;
+    }
+    .foot{
+        width: 100%;
+        height: 150px;
+        background-color: black;
+        
+
+    }
+    .foot1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .foot2 h4{
+        color: white;
+        font-size: 10px;
+        margin-top: 20px;
+        margin-left: 160px;
+
+    }
+    .foot3 h4{
+        margin-top: 50px;
+        color: white;
+        font-size: 10px;
+    }
+    .foot3 h5{
+        color: white;
+    }
+    .foot3 span{
+        color: blue;
+    }
+    @media (max-width:460px){
+        .logo img{
+            width: 100%;
+            margin-left: 1px;
+        }
+        .slider{
+            width: 100%;
+        }
+        .navlinks{
+            width: 100%;
+            height: 35px;
+            background-color: blue;
+            margin-top: 330px;
+            display: flex;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .nav1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 1px;
+            
+            
+            
+            
+            
+        }
+        .nav1 li a{
+            display: block;
+            padding: 3px 6px;
+            
+        }
+        .nav1 li a:hover{
+            background-color: red;
+        }
+        .drop1{
+            position: absolute;
+            display: none;
+            top: 76%;
+            width: 45%; 
+            border: 1px solid black;
+                   
+        }
+        .drop1 li a{
+            border:1px dashed;
+            border-bottom: 0;
+        
+        }
+        .drop1 li a:hover{
+            background-color: gray;
+          
+        }
+        .nav1 li:hover .drop1{
+            display: block; 
+        }
+        .nav1 li:hover .drop1{
+            background-color: dodgerblue;
+        }
+        .drop2{
+            position: absolute;
+            display: none;
+            top: 8%;
+            width: 65%; 
+            border: 1px solid black;
+            left: 200px;
+                   
+        }
+        .drop2 li a{
+            border:1px dashed;
+            border-bottom: 0;
+        
+        }
+        .drop2 li a:hover{
+            background-color: gray;
+          
+        }
+        .drop1 li:hover .drop2{
+            display: block; 
+        }
+        .drop1 li:hover .drop2{
+            background-color: dodgerblue;
+        }
+        .dep{
+            position: absolute;
+            display: none;
+            top: 89%;
+            width: 45%; 
+            border: 1px solid black;
+            
+                   
+        }
+        .dep li a{
+            border:1px dashed;
+            border-bottom: 0;
+        
+        }
+        .dep li a:hover{
+            background-color: gray;
+          
+        }
+        .nav1 li:hover .dep{
+            display: block; 
+        }
+        .nav1 li:hover .dep{
+            background-color: dodgerblue;
+        }
+        .pla{
+            position: absolute;
+            display: none;
+            top: 90%;
+            width: 45%; 
+            border: 1px solid black;
+            left: 200px;
+            
+                   
+        }
+        .pla li a{
+            border:1px dashed;
+            border-bottom: 0;
+        
+        }
+        .pla li a:hover{
+            background-color: gray;
+          
+        }
+        .nav1 li:hover .pla{
+            display: block; 
+        }
+        .nav1 li:hover .pla{
+            background-color: dodgerblue;
+        }
+        .iq{
+            position: absolute;
+            display: none;
+            top: 90%;
+            width: 45%; 
+            border: 1px solid black;
+            left: 240px;
+            
+                   
+        }
+        .iq li a{
+            border:1px dashed;
+            border-bottom: 0;
+        
+        }
+        .iq li a:hover{
+            background-color: gray;
+          
+        }
+        .nav1 li:hover .iq{
+            display: block; 
+        }
+        .nav1 li:hover .iq{
+            background-color: dodgerblue;
+        }
+        
+        
+        .navlinks1{
+            width: 89%;
+            height: 35px;
+            
+            display: flex;
+            margin-left: 0px;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: blue;
+        }
+        .nav2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            
+            
+            
+        }
+        .nav2 li a:hover{
+            background-color: red;
+            
+        }
+        .ni{
+            position: absolute;
+            display: none;
+            top: 83%;
+            width: 45%; 
+            border: 1px solid black;
+            margin-top: 40px;
+            
+            
+                   
+        }
+        .ni li a{
+            border:1px dashed;
+            border-bottom: 0;
+        
+        }
+        .ni li a:hover{
+            background-color: gray;
+          
+        }
+        .nav2 li:hover .ni{
+            display: block; 
+        }
+        .nav2 li:hover .ni{
+            background-color: dodgerblue;
+        }
+        
+    
+    .web{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        
+        margin-left: 1px;
+        
+    }
+    .web1 h3{
+        
+        margin-left: -120px;
+    
+        
+        
+    
+         
+    }
+    .web1 h5{
+        
+        margin-left: -120px;
+        
+    }
+    .web1 h4{
+        margin-left: 190px;
+    }
+    .web2{
+        width: 100%;
+        height: auto;
+        
+        margin-left: 1px;
+        
+    }
+    .web3{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        
+    }
+    .web4{
+        margin-left: 120px;
+        padding: 10px 10px;
+
+        
+    }
+    .foot{
+        width: 100%;
+        height: 300px;
+        background-color: black;
+    }
+    .foot1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .foot3 h4{
+        margin-left: 70px;
+    }
+    .foot3 h5{
+        margin-left: 70px;
+
+    }
+    .foot2 h4{
+        margin-left: 90px;
+    }
+    
+}
+
+    
+
+
+
+
+    
+    
+    
+    
+        
